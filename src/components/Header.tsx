@@ -17,9 +17,9 @@ const Header = () => {
   return (
     <>
       {/* Top Bar */}
-      <div className=" text-white py-2 px-4">
-        <div className="container mx-auto flex flex-col md:flex-row justify-between items-center text-sm">
-          <div className="flex flex-col md:flex-row items-center gap-4">
+      <div className=" text-white py-2 px-4 bg-cyan-600">
+        <div className="container mx-auto flex flex-col md:flex-row justify-between items-center text-sm ">
+          <div className="flex flex-col md:flex-row items-center gap-4 ">
             <div className="flex items-center gap-2">
               <Mail className="w-4 h-4" />
               <span>contact@GurkhaJaGoods.fi</span>

@@ -18,10 +18,10 @@ const buttonVariants = cva(
           "bg-secondary text-secondary-foreground hover:bg-secondary/80",
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
-        GurkhaJaGoods:
-          "bg-GurkhaJaGoods-blue text-white hover:bg-GurkhaJaGoods-dark-blue shadow-elegant transition-all duration-300 hover:shadow-lg transform hover:-translate-y-0.5",
-        GurkhaJaGoodsOutline:
-          "border-2 border-GurkhaJaGoods-blue text-GurkhaJaGoods-blue hover:bg-GurkhaJaGoods-blue hover:text-white transition-all duration-300",
+        gurkha:
+          "bg-gurkha-blue text-white hover:bg-gurkha-dark-blue shadow-elegant transition-all duration-300 hover:shadow-lg transform hover:-translate-y-0.5",
+        gurkhaOutline:
+          "border-2 border-gurkha-blue text-gurkha-blue hover:bg-gurkha-blue hover:text-white transition-all duration-300",
       },
       size: {
         default: "h-10 px-4 py-2",

@@ -5,17 +5,17 @@ const HeroSection = () => {
   return (
     <section
       id="home"
-      className="relative min-h-[70vh] bg-green-800 flex items-center justify-center overflow-hidden">
+      className="relative min-h-[70vh] bg-cover bg-no-repeat bg-[url('https://cdn.pixabay.com/photo/2021/06/09/10/52/woman-6323098_1280.jpg')] flex items-center justify-center overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 bg-gradient-to-br from-green-800/5 to-transparent"></div>
 
       {/* Content */}
-      <div className="container mx-auto px-4 text-center relative z-10">
-        <div className="max-w-4xl mx-auto">
+      <div className="container mx-auto px-4 text-center relative z-10  py-4 rounded-y-">
+        <div className="max-w-4xl mx-auto ">
           {/* Main Heading */}
-          <div className="mb-8">
+          <div className="mb-8 ">
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-4">
-              gurkha Move Experts
+              GurkhaJaGoods Move Experts
             </h1>
             <div className="flex flex-col md:flex-row items-center justify-center gap-2 md:gap-4 text-2xl md:text-4xl font-semibold text-white/95">
               <span>Your Trusted</span>

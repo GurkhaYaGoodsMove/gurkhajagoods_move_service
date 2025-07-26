@@ -63,13 +63,13 @@ const ServicesSection = () => {
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <p className="text-helkan-blue font-semibold mb-2 text-lg">
+          <p className="text-cyan-600 font-semibold mb-2 text-lg">
             What We're Offering
           </p>
-          <h2 className="text-4xl md:text-5xl font-bold text-helkan-dark-gray mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-500 mb-6">
             Our Premium Services
           </h2>
-          <div className="w-24 h-1 bg-helkan-blue mx-auto rounded-full"></div>
+          <div className="w-24 h-1 bg-cyan-500 mx-auto rounded-full"></div>
         </div>
 
         {/* Main Services Grid */}
@@ -86,16 +86,16 @@ const ServicesSection = () => {
                     alt={service.title}
                     className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                   />
-                  <div className="absolute inset-0 bg-helkan-blue/20 group-hover:bg-helkan-blue/10 transition-colors duration-300"></div>
+                  <div className="absolute inset-0 bg-cyan-500/20 group-hover:bg-cyan-500/10 transition-colors duration-300"></div>
                 </div>
 
                 {/* Service Icon */}
-                <div className="w-16 h-16 bg-helkan-blue rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                <div className="w-16 h-16 bg-cyan-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                   <service.icon className="w-8 h-8 text-white" />
                 </div>
 
                 {/* Service Content */}
-                <h3 className="text-2xl font-bold text-helkan-dark-gray mb-4 group-hover:text-helkan-blue transition-colors duration-300">
+                <h3 className="text-2xl font-bold text-gray-500 mb-4 group-hover:text-cyan-600 transition-colors duration-300">
                   {service.title}
                 </h3>
                 <p className="text-muted-foreground mb-6 leading-relaxed">
@@ -107,8 +107,8 @@ const ServicesSection = () => {
                   {service.features.map((feature, featureIndex) => (
                     <li
                       key={featureIndex}
-                      className="flex items-center text-sm text-helkan-dark-gray">
-                      <div className="w-2 h-2 bg-helkan-blue rounded-full mr-3"></div>
+                      className="flex items-center text-sm text-gray-500">
+                      <div className="w-2 h-2 bg-cyan-500 rounded-full mr-3"></div>
                       {feature}
                     </li>
                   ))}
@@ -123,12 +123,12 @@ const ServicesSection = () => {
           {additionalServices.map((service, index) => (
             <Card
               key={index}
-              className="group hover:shadow-card transition-all duration-300 border-helkan-blue/20 bg-white">
+              className="group hover:shadow-card transition-all duration-300 border-cyan-600/20 bg-white">
               <CardContent className="p-6 text-center">
-                <div className="w-12 h-12 bg-helkan-blue/10 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:bg-helkan-blue group-hover:scale-110 transition-all duration-300">
-                  <service.icon className="w-6 h-6 text-helkan-blue group-hover:text-white transition-colors duration-300" />
+                <div className="w-12 h-12 bg-cyan-500/10 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:bg-cyan-500 group-hover:scale-110 transition-all duration-300">
+                  <service.icon className="w-6 h-6 text-cyan-600 group-hover:text-white transition-colors duration-300" />
                 </div>
-                <h4 className="text-lg font-semibold text-helkan-dark-gray mb-2 group-hover:text-helkan-blue transition-colors duration-300">
+                <h4 className="text-lg font-semibold text-gray-500 mb-2 group-hover:text-cyan-600 transition-colors duration-300">
                   {service.title}
                 </h4>
                 <p className="text-muted-foreground text-sm">

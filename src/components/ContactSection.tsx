@@ -41,7 +41,7 @@ const ContactSection = () => {
     {
       icon: Mail,
       title: "Email Us",
-      details: ["contact@helkan.fi", "info@helkan.fi"],
+      details: ["contact@gurkhayagoods.fi", "info@gurkhayagoods.fi"],
       color: "text-blue-600",
     },
     {
@@ -59,28 +59,28 @@ const ContactSection = () => {
   ];
 
   return (
-    <section id="contact" className="py-20 bg-helkan-gray/30">
+    <section id="contact" className="py-20 bg-gray-200/30">
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <p className="text-helkan-blue font-semibold mb-2 text-lg">
+          <p className="text-cyan-600 font-semibold mb-2 text-lg">
             Get In Touch
           </p>
-          <h2 className="text-4xl md:text-5xl font-bold text-helkan-dark-gray mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-500 mb-6">
             Contact Us Today
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Ready to move? Have questions about our services? We're here to help
             you every step of the way.
           </p>
-          <div className="w-24 h-1 bg-helkan-blue mx-auto rounded-full mt-6"></div>
+          <div className="w-24 h-1 bg-cyan-600 mx-auto rounded-full mt-6"></div>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-16">
           {/* Contact Information */}
           <div className="space-y-8">
             <div>
-              <h3 className="text-2xl font-bold text-helkan-dark-gray mb-6">
+              <h3 className="text-2xl font-bold text-gray-500 mb-6">
                 Let's Start Your Moving Journey
               </h3>
               <p className="text-muted-foreground mb-8 leading-relaxed">
@@ -105,7 +105,7 @@ const ContactSection = () => {
                       )}/10`}>
                       <info.icon className={`w-6 h-6 ${info.color}`} />
                     </div>
-                    <h4 className="text-lg font-semibold text-helkan-dark-gray mb-2">
+                    <h4 className="text-lg font-semibold text-gray-500 mb-2">
                       {info.title}
                     </h4>
                     <div className="space-y-1">
@@ -123,13 +123,13 @@ const ContactSection = () => {
             </div>
 
             {/* Company Info */}
-            <Card className="bg-helkan-blue text-white border-0">
+            <Card className="bg-cyan-600 text-white border-0">
               <CardContent className="p-6">
                 <h4 className="text-xl font-semibold mb-3">
-                  Helkan Trading Oy
+                  Gurkha Trading Oy
                 </h4>
                 <p className="text-white/90 text-sm leading-relaxed">
-                  As a subsidiary of Helkan Trading Oy, we bring decades of
+                  As a subsidiary of Gurkha Trading Oy, we bring decades of
                   experience in logistics and transportation to ensure your
                   moving experience is seamless and stress-free.
                 </p>
@@ -140,7 +140,7 @@ const ContactSection = () => {
           {/* Contact Form */}
           <Card className="bg-white shadow-elegant border-0">
             <CardContent className="p-8">
-              <h3 className="text-2xl font-bold text-helkan-dark-gray mb-6">
+              <h3 className="text-2xl font-bold text-gray-500 mb-6">
                 Send us a Message
               </h3>
               <form onSubmit={handleSubmit} className="space-y-6">
@@ -148,7 +148,7 @@ const ContactSection = () => {
                   <div>
                     <label
                       htmlFor="name"
-                      className="block text-sm font-medium text-helkan-dark-gray mb-2">
+                      className="block text-sm font-medium text-gray-500 mb-2">
                       Full Name *
                     </label>
                     <Input
@@ -157,14 +157,14 @@ const ContactSection = () => {
                       value={formData.name}
                       onChange={handleInputChange}
                       required
-                      className="border-helkan-gray focus:border-helkan-blue focus:ring-helkan-blue"
+                      className="border-gray-200 focus:border-cyan-600 focus:ring-cyan-600"
                       placeholder="Your full name"
                     />
                   </div>
                   <div>
                     <label
                       htmlFor="phone"
-                      className="block text-sm font-medium text-helkan-dark-gray mb-2">
+                      className="block text-sm font-medium text-gray-500 mb-2">
                       Phone Number
                     </label>
                     <Input
@@ -173,7 +173,7 @@ const ContactSection = () => {
                       type="tel"
                       value={formData.phone}
                       onChange={handleInputChange}
-                      className="border-helkan-gray focus:border-helkan-blue focus:ring-helkan-blue"
+                      className="border-gray-200 focus:border-cyan-600 focus:ring-cyan-600"
                       placeholder="+358 XX XXX XXXX"
                     />
                   </div>
@@ -182,7 +182,7 @@ const ContactSection = () => {
                 <div>
                   <label
                     htmlFor="email"
-                    className="block text-sm font-medium text-helkan-dark-gray mb-2">
+                    className="block text-sm font-medium text-gray-500 mb-2">
                     Email Address *
                   </label>
                   <Input
@@ -192,7 +192,7 @@ const ContactSection = () => {
                     value={formData.email}
                     onChange={handleInputChange}
                     required
-                    className="border-helkan-gray focus:border-helkan-blue focus:ring-helkan-blue"
+                    className="border-gray-200 focus:border-cyan-600 focus:ring-cyan-600"
                     placeholder="your.email@example.com"
                   />
                 </div>
@@ -200,7 +200,7 @@ const ContactSection = () => {
                 <div>
                   <label
                     htmlFor="message"
-                    className="block text-sm font-medium text-helkan-dark-gray mb-2">
+                    className="block text-sm font-medium text-gray-500 mb-2">
                     Message *
                   </label>
                   <Textarea
@@ -210,7 +210,7 @@ const ContactSection = () => {
                     onChange={handleInputChange}
                     required
                     rows={5}
-                    className="border-helkan-gray focus:border-helkan-blue focus:ring-helkan-blue resize-none"
+                    className="border-gray-200 focus:border-cyan-600 focus:ring-cyan-600 resize-none"
                     placeholder="Tell us about your moving needs, dates, and any special requirements..."
                   />
                 </div>

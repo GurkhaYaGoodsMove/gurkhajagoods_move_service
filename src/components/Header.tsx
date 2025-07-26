@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Phone, Mail, MapPin } from "lucide-react";
 import { cn } from "@/lib/utils";
-import helkanLogo from "@/assets/helkan-logo.svg";
+import GurkhaJaGoodsLogo from "@/assets/gurkhajagoods-logo.svg";
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -17,19 +17,19 @@ const Header = () => {
   return (
     <>
       {/* Top Bar */}
-      <div className="bg-helkan-blue text-white py-2 px-4">
+      <div className=" text-white py-2 px-4">
         <div className="container mx-auto flex flex-col md:flex-row justify-between items-center text-sm">
           <div className="flex flex-col md:flex-row items-center gap-4">
             <div className="flex items-center gap-2">
               <Mail className="w-4 h-4" />
-              <span>contact@helkan.fi</span>
+              <span>contact@GurkhaJaGoods.fi</span>
             </div>
             <div className="flex items-center gap-2">
               <MapPin className="w-4 h-4" />
               <span>Juustenintie 3, Helsinki, Finland</span>
             </div>
             <span className="text-xs opacity-75">
-              A subsidiary of Helkan Trading Oy
+              A subsidiary of Gurkha Trading Oy
             </span>
           </div>
           <div className="flex items-center gap-4 mt-2 md:mt-0">
@@ -48,13 +48,13 @@ const Header = () => {
             {/* Logo */}
             <div className="flex items-center">
               <img
-                src={helkanLogo}
-                alt="Helkan Move"
+                src={GurkhaJaGoodsLogo}
+                alt="GurkhaJaGoods Move"
                 className="h-12 w-12 rounded-lg mr-3"
               />
               <div>
-                <h1 className="text-xl font-bold text-helkan-dark-gray">
-                  Helkan Move
+                <h1 className="text-xl font-bold text-GurkhaJaGoods-dark-gray">
+                  GurkhaJaGoods Move
                 </h1>
                 <p className="text-sm text-muted-foreground">Experts</p>
               </div>
@@ -67,9 +67,9 @@ const Header = () => {
                   key={index}
                   href={item.href}
                   className={cn(
-                    "text-foreground hover:text-helkan-blue transition-colors duration-200 font-medium",
+                    "text-foreground hover:text-GurkhaJaGoods-blue transition-colors duration-200 font-medium",
                     item.active &&
-                      "text-helkan-blue border-b-2 border-helkan-blue pb-1"
+                      "text-GurkhaJaGoods-blue border-b-2 border-GurkhaJaGoods-blue pb-1"
                   )}>
                   {item.label}
                 </a>
@@ -82,7 +82,7 @@ const Header = () => {
                 <p className="text-sm text-muted-foreground">
                   Have any questions?
                 </p>
-                <div className="flex items-center gap-2 text-helkan-blue font-semibold">
+                <div className="flex items-center gap-2 text-GurkhaJaGoods-blue font-semibold">
                   <Phone className="w-4 h-4" />
                   <span>+358 413 123691 | +358 417 233118</span>
                 </div>
@@ -112,15 +112,16 @@ const Header = () => {
                     key={index}
                     href={item.href}
                     className={cn(
-                      "text-foreground hover:text-helkan-blue transition-colors duration-200 font-medium px-4 py-2",
-                      item.active && "text-helkan-blue bg-helkan-blue/5"
+                      "text-foreground hover:text-GurkhaJaGoods-blue transition-colors duration-200 font-medium px-4 py-2",
+                      item.active &&
+                        "text-GurkhaJaGoods-blue bg-GurkhaJaGoods-blue/5"
                     )}
                     onClick={() => setIsMobileMenuOpen(false)}>
                     {item.label}
                   </a>
                 ))}
                 <div className="px-4 pt-4 border-t">
-                  <div className="flex items-center gap-2 text-helkan-blue font-semibold">
+                  <div className="flex items-center gap-2 text-GurkhaJaGoods-blue font-semibold">
                     <Phone className="w-4 h-4" />
                     <span>+358 413 123691</span>
                   </div>

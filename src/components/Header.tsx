@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Phone, Mail, MapPin } from "lucide-react";
 import { cn } from "@/lib/utils";
-import GurkhaJaGoodsLogo from "@/assets/logos/logomark/darkgreen.png";
+import GurkhaJaGoodsLogo from "@/assets/logos/logomark/green.png";
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -17,7 +17,7 @@ const Header = () => {
   return (
     <>
       {/* Top Bar */}
-      <div className=" text-white py-2 px-4 bg-cyan-600">
+      <div className=" text-white py-2 px-4 bg-primary">
         <div className="container mx-auto flex flex-col md:flex-row justify-between items-center text-sm ">
           <div className="flex flex-col md:flex-row items-center gap-4 ">
             <div className="flex items-center gap-2">
@@ -84,7 +84,7 @@ const Header = () => {
                 </p>
                 <div className="flex items-center gap-2 text-GurkhaJaGoods-blue font-semibold">
                   <Phone className="w-4 h-4" />
-                  <span>+358 413 123691 | +358 417 233118</span>
+                  <span>+358469587579 | +358451562510</span>
                 </div>
               </div>
             </div>
@@ -123,7 +123,7 @@ const Header = () => {
                 <div className="px-4 pt-4 border-t">
                   <div className="flex items-center gap-2 text-GurkhaJaGoods-blue font-semibold">
                     <Phone className="w-4 h-4" />
-                    <span>+358 413 123691</span>
+                    <span>+358469587579</span>
                   </div>
                 </div>
               </nav>

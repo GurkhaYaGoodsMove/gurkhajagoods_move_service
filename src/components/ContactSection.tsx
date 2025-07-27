@@ -35,7 +35,7 @@ const ContactSection = () => {
     {
       icon: Phone,
       title: "Call Us",
-      details: ["+358 413 123691", "+358 417 233118"],
+      details: ["+358469587579", "+358451562510"],
       color: "text-green-600",
     },
     {
@@ -63,7 +63,7 @@ const ContactSection = () => {
       <div className="container mx-auto px-4">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <p className="text-cyan-600 font-semibold mb-2 text-lg">
+          <p className="text-primary font-semibold mb-2 text-lg">
             Get In Touch
           </p>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-500 mb-6">
@@ -73,7 +73,7 @@ const ContactSection = () => {
             Ready to move? Have questions about our services? We're here to help
             you every step of the way.
           </p>
-          <div className="w-24 h-1 bg-cyan-600 mx-auto rounded-full mt-6"></div>
+          <div className="w-24 h-1 bg-primary mx-auto rounded-full mt-6"></div>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-16">
@@ -123,7 +123,7 @@ const ContactSection = () => {
             </div>
 
             {/* Company Info */}
-            <Card className="bg-cyan-600 text-white border-0">
+            <Card className="bg-primary text-white border-0">
               <CardContent className="p-6">
                 <h4 className="text-xl font-semibold mb-3">
                   Gurkha Trading Oy
@@ -157,7 +157,7 @@ const ContactSection = () => {
                       value={formData.name}
                       onChange={handleInputChange}
                       required
-                      className="border-gray-200 focus:border-cyan-600 focus:ring-cyan-600"
+                      className="border-gray-200 focus:border-primary focus:ring-primary"
                       placeholder="Your full name"
                     />
                   </div>
@@ -173,7 +173,7 @@ const ContactSection = () => {
                       type="tel"
                       value={formData.phone}
                       onChange={handleInputChange}
-                      className="border-gray-200 focus:border-cyan-600 focus:ring-cyan-600"
+                      className="border-gray-200 focus:border-primary focus:ring-primary"
                       placeholder="+358 XX XXX XXXX"
                     />
                   </div>
@@ -192,7 +192,7 @@ const ContactSection = () => {
                     value={formData.email}
                     onChange={handleInputChange}
                     required
-                    className="border-gray-200 focus:border-cyan-600 focus:ring-cyan-600"
+                    className="border-gray-200 focus:border-primary focus:ring-primary"
                     placeholder="your.email@example.com"
                   />
                 </div>
@@ -210,7 +210,7 @@ const ContactSection = () => {
                     onChange={handleInputChange}
                     required
                     rows={5}
-                    className="border-gray-200 focus:border-cyan-600 focus:ring-cyan-600 resize-none"
+                    className="border-gray-200 focus:border-primary focus:ring-primary resize-none"
                     placeholder="Tell us about your moving needs, dates, and any special requirements..."
                   />
                 </div>

@@ -6,7 +6,7 @@ import {
   Instagram,
   Youtube,
 } from "lucide-react";
-import GurkhaJaGoodsLogo from "@/assets/logos/logomark/darkgreen.png";
+import GurkhaJaGoodsLogo from "@/assets/logos/logomark/green.png";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -28,7 +28,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-cyan-600 text-white">
+    <footer className="bg-primary text-white">
       <div className="container mx-auto px-4 py-16">
         <div className="grid md:grid-cols-4 gap-8">
           {/* Company Info */}
@@ -110,13 +110,13 @@ const Footer = () => {
               <div className="flex items-center space-x-3">
                 <Phone className="w-5 h-5 text-gurkha-light-blue flex-shrink-0" />
                 <div>
-                  <p className="text-white/90">+358 413 123691</p>
-                  <p className="text-white/70">+358 417 233118</p>
+                  <p className="text-white/90">+358469587579</p>
+                  <p className="text-white/70">+358451562510</p>
                 </div>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-5 h-5 text-gurkha-light-blue flex-shrink-0" />
-                <p className="text-white/90">contact@gurkha.fi</p>
+                <p className="text-white/90">info@gurkhajagoods@gmail.com</p>
               </div>
             </div>
           </div>

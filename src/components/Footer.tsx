@@ -6,7 +6,7 @@ import {
   Instagram,
   Youtube,
 } from "lucide-react";
-import gurkhaLogo from "@/assets/gurkhajagoods-logo.svg";
+import GurkhaJaGoodsLogo from "@/assets/logos/logomark/darkgreen.png";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -35,9 +35,9 @@ const Footer = () => {
           <div className="space-y-6">
             <div className="flex items-center">
               <img
-                src={gurkhaLogo}
+                src={GurkhaJaGoodsLogo}
                 alt="gurkha Move"
-                className="h-12 w-12 rounded-lg mr-3"
+                className="h-12 w-auto rounded-lg mr-3"
               />
               <div>
                 <h3 className="text-xl font-bold">gurkha Move</h3>

@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X, Phone, Mail, MapPin } from "lucide-react";
 import { cn } from "@/lib/utils";
-import GurkhaJaGoodsLogo from "@/assets/gurkhajagoods-logo.svg";
+import GurkhaJaGoodsLogo from "@/assets/logos/logomark/darkgreen.png";
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -50,7 +50,7 @@ const Header = () => {
               <img
                 src={GurkhaJaGoodsLogo}
                 alt="GurkhaJaGoods Move"
-                className="h-12 w-12 rounded-lg mr-3"
+                className="h-16 w-auto rounded-lg mr-3"
               />
               <div>
                 <h1 className="text-xl font-bold text-GurkhaJaGoods-dark-gray">

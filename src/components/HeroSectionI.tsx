@@ -21,6 +21,7 @@ export default function HeroSectionI() {
 
   return (
     <section
+      id="home"
       className="relative h-screen flex items-center justify-center bg-cover bg-center bg-no-repeat"
       style={{
         backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://ext.same-assets.com/2408989152/3786914820.jpeg')`,

@@ -6,11 +6,11 @@ import GurkhaJaGoodsLogo from "@/assets/logos/logomark/green.png";
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [activeItem, setActiveItem] = useState("#home");
 
   const navItems = [
-    { label: "Home", href: "#home", active: true },
+    { label: "Home", href: "#home" },
     { label: "Services", href: "#services" },
-    { label: "About Us", href: "#about" },
     { label: "Contact us", href: "#contact" },
   ];
 
@@ -67,11 +67,20 @@ const Header = () => {
                   key={index}
                   href={item.href}
                   className={cn(
-                    "text-foreground hover:text-GurkhaJaGoods-blue transition-colors duration-200 font-medium",
-                    item.active &&
-                      "text-GurkhaJaGoods-blue border-b-2 border-GurkhaJaGoods-blue pb-1"
-                  )}>
+                    "text-foreground hover:text-cyan-600 transition-colors duration-200 font-medium relative group",
+                    activeItem === item.href && "text-cyan-600"
+                  )}
+                  onClick={() => setActiveItem(item.href)}
+                >
                   {item.label}
+                  <span
+                    className={cn(
+                      "absolute left-0 bottom-0 h-0.5 bg-cyan-600 transition-all duration-300",
+                      activeItem === item.href
+                        ? "w-full"
+                        : "w-0 group-hover:w-full"
+                    )}
+                  />
                 </a>
               ))}
             </nav>
@@ -82,7 +91,7 @@ const Header = () => {
                 <p className="text-sm text-muted-foreground">
                   Have any questions?
                 </p>
-                <div className="flex items-center gap-2 text-GurkhaJaGoods-blue font-semibold">
+                <div className="flex items-center gap-2 text-cyan-600 font-semibold">
                   <Phone className="w-4 h-4" />
                   <span>+358469587579 | +358451562510</span>
                 </div>
@@ -94,7 +103,8 @@ const Header = () => {
               variant="ghost"
               size="icon"
               className="md:hidden"
-              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}>
+              onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            >
               {isMobileMenuOpen ? (
                 <X className="h-6 w-6" />
               ) : (
@@ -112,16 +122,19 @@ const Header = () => {
                     key={index}
                     href={item.href}
                     className={cn(
-                      "text-foreground hover:text-GurkhaJaGoods-blue transition-colors duration-200 font-medium px-4 py-2",
-                      item.active &&
-                        "text-GurkhaJaGoods-blue bg-GurkhaJaGoods-blue/5"
+                      "text-foreground hover:text-cyan-600 transition-colors duration-200 font-medium px-4 py-2",
+                      activeItem === item.href && "text-cyan-600 bg-cyan-600/5"
                     )}
-                    onClick={() => setIsMobileMenuOpen(false)}>
+                    onClick={() => {
+                      setActiveItem(item.href);
+                      setIsMobileMenuOpen(false);
+                    }}
+                  >
                     {item.label}
                   </a>
                 ))}
                 <div className="px-4 pt-4 border-t">
-                  <div className="flex items-center gap-2 text-GurkhaJaGoods-blue font-semibold">
+                  <div className="flex items-center gap-2 text-cyan-600 font-semibold">
                     <Phone className="w-4 h-4" />
                     <span>+358469587579</span>
                   </div>

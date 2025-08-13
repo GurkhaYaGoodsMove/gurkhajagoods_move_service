@@ -37,13 +37,15 @@ const HeroSection = () => {
   return (
     <section
       id="home"
-      className="relative min-h-[90vh] bg-gradient-to-br from-gray-900 to-gray-950 flex items-center justify-center overflow-hidden">
+      className="relative min-h-[90vh] bg-gradient-to-br from-gray-900 to-gray-950 flex items-center justify-center overflow-hidden"
+    >
       {/* Abstract background shapes */}
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 0.15 }}
         transition={{ duration: 1.5 }}
-        className="absolute inset-0 overflow-hidden">
+        className="absolute inset-0 overflow-hidden"
+      >
         <div className="absolute top-0 left-0 w-[400px] h-[400px] bg-emerald-400 rounded-full mix-blend-overlay filter blur-[100px] opacity-20"></div>
         <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-amber-400 rounded-full mix-blend-overlay filter blur-[120px] opacity-20"></div>
         <div className="absolute top-1/2 left-1/4 w-[300px] h-[300px] bg-purple-500 rounded-full mix-blend-overlay filter blur-[90px] opacity-15"></div>
@@ -63,7 +65,8 @@ const HeroSection = () => {
           variants={container}
           initial="hidden"
           animate="show"
-          className="flex flex-col lg:flex-row items-center justify-between gap-12">
+          className="flex flex-col lg:flex-row items-center justify-between gap-12"
+        >
           {/* Text content */}
           <div className="lg:w-1/2 text-left">
             <motion.div variants={item} className="mb-6">
@@ -74,7 +77,8 @@ const HeroSection = () => {
 
             <motion.h1
               variants={item}
-              className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+              className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight"
+            >
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-amber-300">
                 Stress-Free
               </span>{" "}
@@ -83,23 +87,27 @@ const HeroSection = () => {
 
             <motion.p
               variants={item}
-              className="text-xl text-gray-300 mb-10 max-w-2xl leading-relaxed">
+              className="text-xl text-gray-300 mb-10 max-w-2xl leading-relaxed"
+            >
               Experience seamless moving with our expert team. From packing to
               transportation, we handle every detail so you don't have to.
             </motion.p>
 
             <motion.div
               variants={item}
-              className="flex flex-col sm:flex-row gap-4 items-start">
+              className="flex flex-col sm:flex-row gap-4 items-start"
+            >
               <Button
                 size="lg"
-                className="text-lg px-8 py-6 h-auto font-semibold bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white shadow-lg shadow-emerald-500/20 hover:shadow-emerald-500/30 transition-all group">
+                className="text-lg px-8 py-6 h-auto font-semibold bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white shadow-lg shadow-emerald-500/20 hover:shadow-emerald-500/30 transition-all group"
+              >
                 Get Free Quote
                 <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform duration-200" />
               </Button>
               <Button
                 size="lg"
-                className="text-lg px-8 py-6 h-auto font-semibold bg-transparent border-2 border-gray-700 hover:bg-gray-800/50 text-white hover:text-white shadow-lg hover:shadow-gray-800/20 transition-all group">
+                className="text-lg px-8 py-6 h-auto font-semibold bg-transparent border-2 border-gray-700 hover:bg-gray-800/50 text-white hover:text-white shadow-lg hover:shadow-gray-800/20 transition-all group"
+              >
                 How It Works
                 <MoveRight className="ml-2 group-hover:translate-x-1 transition-transform duration-200" />
               </Button>
@@ -107,7 +115,8 @@ const HeroSection = () => {
 
             <motion.div
               variants={item}
-              className="mt-12 flex items-center gap-4 text-gray-400">
+              className="mt-12 flex items-center gap-4 text-gray-400"
+            >
               <div className="flex -space-x-3">
                 {[1, 2, 3].map((i) => (
                   <motion.img
@@ -131,7 +140,8 @@ const HeroSection = () => {
                       key={star}
                       className="w-5 h-5 text-amber-400"
                       fill="currentColor"
-                      viewBox="0 0 20 20">
+                      viewBox="0 0 20 20"
+                    >
                       <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                     </svg>
                   ))}
@@ -147,7 +157,8 @@ const HeroSection = () => {
             className="lg:w-1/2 relative"
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
-            transition={{ delay: 0.6, duration: 0.8 }}>
+            transition={{ delay: 0.6, duration: 0.8 }}
+          >
             <div className="relative">
               <div className="absolute -inset-4 bg-gradient-to-r from-emerald-500 to-purple-600 rounded-2xl opacity-20 blur-xl"></div>
               <div className="relative bg-gray-800/50 backdrop-blur-md border border-gray-700/50 rounded-xl overflow-hidden shadow-2xl">
